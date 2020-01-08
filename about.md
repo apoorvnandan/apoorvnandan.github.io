@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-See my [website](http://cs.stanford.edu/people/karpathy/).
+Apoorv Nandan | Machine Learning Engineer at [Observe.AI](http://observe.ai)
