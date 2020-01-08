@@ -1,11 +1,11 @@
 # Site settings
-title: Andrej Karpathy blog
+title: Apoorv Nandan - Blog
 email: 
-description: "Musings of a Computer Scientist."
+description: ""
 baseurl: ""
-url: "http://karpathy.github.io"
-twitter_username: karpathy
-github_username:  karpathy
+url: "http://apoorvnandan.github.io"
+twitter_username: NandanApoorv
+github_username:  apoorvnandan
 
 # Build settings
 markdown: kramdown
