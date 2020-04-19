@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: true
+comments: false
 title:  "Training Transformers on TPU"
 excerpt: "Training transformers is now super easy thanks to HuggingFace and Tensorflow 2"
 date:   2020-04-19 22:00:00
