@@ -3,7 +3,7 @@ layout: post
 comments: false
 title:  "Minimal Example of End to End Speech Recognition"
 excerpt: "Stripped down end to end ASR in Tensorflow"
-date:   2020-01-21 22:00:00
+date:   2020-08-30 22:00:00
 ---
 ## Contents
 - **Audio preprocessing:** Converting raw audio into numerical features which are useful as inputs for a neural network
