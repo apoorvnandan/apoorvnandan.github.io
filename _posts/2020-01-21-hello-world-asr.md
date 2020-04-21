@@ -24,7 +24,9 @@ This function computes the Short-time Fourier Transform of your audio signal and
  [here](https://haythamfayek.com/2016/04/21/speech-processing-for-machine-learning.html).
  
 ## Neural Network
+
 <img src="/assets/BASIC ASR.png">
+
 You spectrogram has a time axis, and a frequency axis.
 Your network needs to take this spectrogram as input and output the probabilities for each character ('a', 'b', 'c', ..) at each timestep in its time axis.
 Here is a simple architecture.
