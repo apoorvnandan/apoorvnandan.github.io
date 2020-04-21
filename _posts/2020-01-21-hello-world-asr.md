@@ -179,7 +179,7 @@ def prefix_beam_search(ctc,
 ```
 This completes a bare-bones speech recognition system. You can introduce a bunch of complications to get better outputs. Bigger networks and audio preprocessing tricks help a lot. Here is the complete [code](https://github.com/apoorvnandan/speech-recognition-primer).
 
----
+<hr>
 
 Notes:
 1. The code above uses TensorFlow 2.0 and the sample audio file has been taken from the [LibriSpeech](http://www.openslr.org/12) dataset.
