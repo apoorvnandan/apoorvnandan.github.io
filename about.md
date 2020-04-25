@@ -4,4 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Apoorv Nandan | Machine Learning Engineer at [Observe.AI](http://observe.ai)
+Machine Learning Engineer at [Observe.AI](http://observe.ai)  
+Twitter [@NandanApoorv](https://twitter.com/NandanApoorv)
+
+Writing small posts for interesting things that I learn / think about.
