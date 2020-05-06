@@ -35,7 +35,8 @@ Here, data is any form of observations we take in a physical world.
 
 **Assumption #1:** Any groud truth data (observations) is a composition of certain underlying independent mechanisms at work. For example, you see an apple fall, and determine that there is gravity at play here. Even if you have never seen your laptop fall (out of distribution), you know it will fall as the same gravitational mechanism is at play.
 
-**Assumption #2:** Change in data distribution is due to one or very few of those underlying mechanisms changing by a little bit.
+**Assumption #2:** Change in data distribution is due to one or very few of those underlying mechanisms changing by a little bit.  
+An example is when you put on sunglasses, every thing that you see seems darker, so it is a massive change when looking only at the observed signals (pixels in this case). But if you take into account this underlying mechanism about sunglasses being on or off, it explains the change in distribution of observed data (the things you see) in a simple fashion. This knowledge of underlying mechanism can help a model quickly adapt to this change in distribution. 
 
 ### The idea
 If you learn bad representations of your data, your model will need a lot of out of distribution data to adapt to it, as it cannot identify the underlying mehanisms that generate that data, and hence cannot make changes corresponding to the few mechanisms that have changes.
