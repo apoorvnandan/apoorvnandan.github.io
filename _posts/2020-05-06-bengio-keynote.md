@@ -17,7 +17,7 @@ Most of the talk deals with the current limitations of deep learning when it com
 ## Current Deep Learning vs Deep Learning 2.0
 The book "Thinking fast and thinking slow", talks about two intelligent systems inside our head.
 
-**Sytem 1:** This system is fast. It works on intuition and you cannnot consciously control it. This is similar to the current state of deep learning.
+**System 1:** This system is fast. It works on intuition and you cannnot consciously control it. This is similar to the current state of deep learning.
 
 **System 2:** This system is slow. It is logical and conscious. It is reponsible for all sorts of planning, reasoning and long term executions. This is what Deep Learning can hopefully achieve in its next phase or version (Deep Learning 2.0)
 
@@ -26,7 +26,7 @@ There are two research projects that Bengio et. al. talked about in the directio
 ## I. Meta Transfer Objective 
 [Link to the paper](https://arxiv.org/pdf/1901.10912.pdf)
 
-The objective is of this research is to learn representations of knowledge (eg, sensory inputs like images and audio) such that a model that works with these representations can quickly adapt to out of distribution data.
+The objective is of this research is to learn representations of knowledge (eg, sensory inputs like images and audio) such that a model that works with these representations can quickly adapt to out-of-distribution data.
 
 ### The setup
 You have a training distribution which explains your training data. And you have a change in the training distribution which causes your test data to be diifferent.
@@ -42,7 +42,7 @@ If you learn bad representations of your data, your model will need a lot of out
 
 If you learn to convert your observations into good represnetations, that capture these underlying mechanisms and their relationships, your model would identify the mechanisms that have changed in the new out of distribution data. Therfore, it can quickly adapt to it by changing only a few parameters (corresponding to the changed underlying mechanisms).
 
-Therefore the speed of adapting to out of distribution data can be an objective function to chase after in order to learn good representations from your observations. 
+Therefore, the speed of adapting to out of distribution data can be an objective function to chase after in order to learn good representations from your observations. 
 
 This means updating the parameters of an encoder network such that a model working with the representations it produces from your observations can quickly adapt to out of distribution inputs.
 
