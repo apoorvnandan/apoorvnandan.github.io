@@ -6,7 +6,7 @@ excerpt: "Implement transformer block as a Keras layer and use it for text class
 date:   2020-05-10 22:00:00
 ---
 
-The example below shows implentation of a transformer block as a Keras layer, which can be used in plaace of an LSTM or GRU layer to process sequential input.
+The example below shows implentation of a transformer block as a Keras layer, which can be used in place of an LSTM or GRU layer to process sequential input.
 We take the mean of transformer outputs at each time step and use a feed forward network on top of it to classify text.
 
 - The transformer shown in the example is a small one; 2 attention heads, and small dimensions for projection heads and FFN. It achieves validation accuracy of 87% on IMDB in less than a minute on CPU.  
