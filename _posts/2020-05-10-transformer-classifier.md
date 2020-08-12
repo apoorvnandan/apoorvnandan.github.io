@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: false
+comments: true
 title:  "Text classification with Transformer"
 excerpt: "Implement transformer block as a Keras layer and use it for text classification."
 date:   2020-05-10 22:00:00
