@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: false
+comments: true
 title:  "Notes on Yoshua Bengio's Keynote in ICASSP 2020"
 excerpt: "Overcoming the limitations of current deep learning"
 date:   2020-05-06 22:00:00
