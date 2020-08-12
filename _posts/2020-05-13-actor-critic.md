@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: false
+comments: true
 title:  "Actor Critic Method"
 excerpt: "Implement Actor Critic Method in CartPole environment."
 date:   2020-05-13 22:00:00
