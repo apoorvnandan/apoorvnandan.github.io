@@ -154,5 +154,21 @@ data loader are ready, I can train on CPU, single GPU, multiple GPUs, single TPU
 ```python
 trainer = pl.Trainer(gpus=1)
 trainer.fit(model, train_loader)
+```
+## Saving and Loading
+The weights can be saved and loaded for predictions like this.<br>
+```python
+torch.save(model.state_dict(), 'saved.bin')
 
+class BertPred(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.bert = BertForMaskedLM.from_pretrained('bert-base-uncased')
+
+    def forward(self, input_ids, labels=None):
+        return self.bert(input_ids=input_ids,labels=labels)
+
+new_model = BERTPred()
+new_model.eval()
+new_model.load_state_dict(torch.load('saved.bin'))
 ```
