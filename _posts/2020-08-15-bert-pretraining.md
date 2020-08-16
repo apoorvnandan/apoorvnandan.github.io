@@ -84,7 +84,7 @@ class MaskedLMDataset(Dataset):
     def __getitem__(self, idx):
         return torch.tensor(self.ids[idx], dtype=torch.long)
         
-train_dataset = MaskedLMDataset([args.train], tokenizer)
+train_dataset = MaskedLMDataset(args.train, tokenizer)
 ```
 A collator function in pytorch takes a list of elements given by the dataset class and
 and creates a batch of input (and targets). Huggingface provides a convenient collator function
