@@ -6,7 +6,7 @@ excerpt: "Pretraining or fine tuning BERT on masked LM task"
 date:   2020-08-15 22:00:00
 ---
 
-## Initial Steup
+## Initial Setup
 I will use BERT model from huggingface and a lighweight wrapper over pytorch
 called [Pytorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) to avoid writing boilerplate.<br/>
 ```bash
