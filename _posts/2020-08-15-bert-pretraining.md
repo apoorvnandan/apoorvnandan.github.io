@@ -135,19 +135,19 @@ This is where pytorch lightning does an awesome job. Once, the model and
 data loader are ready, I can train on CPU, single GPU, multiple GPUs, single TPU cores and multiple TPU cores with just two lines of code.<br>
 1. Initialise the Trainer as per the hardware:<br>
     CPU<br>
-    ```
+    ```python
     trainer = pl.Trainer(max_epochs=1)
     ```
     GPU (single or multiple)<br>
-    ```
+    ```python
     trainer = pl.Trainer(max_epochs=1, gpus=8)
     ```
     Single TPU core<br>
-    ```
+    ```python
     trainer = pl.Trainer(max_epochs=1, tpu_cores=[1])
     ```
     Multiple TPU cores<br>
-    ```
+    ```python
     trainer = pl.Trainer(max_epochs=1, tpu_cores=8)
     ```
 2. Run the fit function.
