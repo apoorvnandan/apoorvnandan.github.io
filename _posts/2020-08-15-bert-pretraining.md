@@ -169,6 +169,6 @@ class BertPred(nn.Module):
         return self.bert(input_ids=input_ids,labels=labels)
 
 new_model = BERTPred()
-new_model.eval()
 new_model.load_state_dict(torch.load('saved.bin'))
+new_model.eval()
 ```
