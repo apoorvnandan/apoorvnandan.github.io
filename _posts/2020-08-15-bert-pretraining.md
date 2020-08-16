@@ -131,8 +131,8 @@ model = Bert()
 
 ```
 ## Train<br/>
-This is where pytorch lightning does an awesome job. Once, the model and
-data loader are ready, I can train on CPU, single GPU, multiple GPUs, single TPU cores and multiple TPU cores with just two lines of code.<br>
+This is where pytorch lightning does an awesome job. Once the model and
+data loader are ready, I can train on CPU, single GPU, multiple GPUs, single TPU core and multiple TPU cores with just two lines of code.<br>
 1. Initialise the Trainer as per the hardware:<br>
     CPU<br>
     ```python
