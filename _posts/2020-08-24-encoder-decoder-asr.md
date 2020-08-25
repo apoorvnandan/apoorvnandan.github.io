@@ -18,15 +18,17 @@ Here's the main thing to keep in mind.<br>
 Unlike unidirectional RNNs or Transformer blocks with causal masks, the output at timestep *t* does not depend on input at every timetsep < t.
 There is a receptive field associated with these convolutional layers. Which means, if the recpetive field is 6, output at *t* only depends on input at 
 *(t-0, ...t-5)*. Thankfully, the receptive field can be increased easily without dramatically increasing the number of parameters by uisng dilated convolutions.<br>
-For example;<br>
-- Assume kernel size is always 3, and stride is always 1.
-- Layer 1,2,3,4... have dilations of 1,2,4,8,... and so on.
+For example; If Layer 1,2,3,4... have dilations of 1,2,4,8,... and so on.<br>
 - The receptive field with just one layer is 3. (Just the kernel size)
 - The receptive field with 2 layers is 7.
-- The receptive field with 10 layers is 1031. However, the number of parameters scales linearly with the number of layers. This results in fast processing over long sequences.
+- The receptive field with 10 layers is 1031. 
+
+However, the number of parameters scales linearly with the number of layers. This results in fast processing over long sequences. Okay, lets get to implementation.
 
 ## Encoder
-Process sequence of input vectors into another sequence of vectors. (such that they better represent the information in the input)
+The number of layers depends on the receptive field needed to process the input sequence effectively. If each timestep is a word, maybe a receptive field of 20 is enough for a lot of tasks. If each timestep is a character, the recpetive field needs to be bigger. With speech data, huge receptive fields are needed. (eg. 16000 waveform samples in one second of audio)
+
+The code below, shows 5 layers with dilations = 1,2,4,8,16.
 ```python
 def encode_inputs(encoder_inputs):
     x_encoder = Convolution1D(256, kernel_size=3, activation="relu", padding="causal")(
