@@ -14,7 +14,7 @@ date:   2020-08-24 22:00:00
 and illustrations on this topic.
 
 Here's the main thing to keep in mind.<br>
-<img src="/assets/causal.png">
+<img src="/assets/causal.png" style="width:100%;">
 Unlike unidirectional RNNs or Transformer blocks with causal masks, the output at timestep *t* does not depend on input at every timetsep < t.
 There is a receptive field associated with these convolutional layers. Which means, if the recpetive field is 6, output at *t* only depends on input at 
 *(t-0, ...t-5)*. Thankfully, the receptive field can be increased easily without dramatically increasing the number of parameters by uisng dilated convolutions.<br>
