@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Model Implementation: Original U-Net in Keras / Tensorflow 2.3)"
+title:  "Model Implementation: Original U-Net in Keras / Tensorflow 2.3"
 excerpt: "Using Keras' Functional API to implement U-Net architecture"
 date:   2020-08-30 22:00:00
 ---
