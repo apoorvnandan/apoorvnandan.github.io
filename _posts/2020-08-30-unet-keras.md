@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "Clean Implementation: Original U-Net in Keras (tensorflow 2)"
-excerpt: "Using Keras' Functional API to implement original U-Net architecture"
+title:  "Model Implementation: Original U-Net in Keras / Tensorflow 2.3)"
+excerpt: "Using Keras' Functional API to implement U-Net architecture"
 date:   2020-08-30 22:00:00
 ---
 ## Introduction
@@ -13,7 +13,7 @@ tasks (especially for biomedical images).
 I'll follow the exact architecture given in the Figure 1. from the paper (copied below)
 <image src="/assets/unet.png" style="width:100%;">
 
-## Implementation in 60 lines of code
+## Implementation in 50 lines of code
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers
