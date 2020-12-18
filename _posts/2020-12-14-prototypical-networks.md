@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Few shot classification with Prototypical Networks"
 excerpt: "Implementing prototypical networks in Pytorch"
-date:   2020-10-27 22:00:00
+date:   2020-12-14 22:00:00
 ---
 N shot classification is a task where the classifier has access to only N examples of each class in the test set. 
 Solutions to this task are really useful in real world scenarios where a lot of labelled data is not present or 
